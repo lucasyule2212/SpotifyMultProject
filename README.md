@@ -126,7 +126,7 @@ Developed with ❤️ by Lucas Yule 👋🏽 Contact me!
 
 <div align="center">
 
-Copyright © 2021 [NAME](https://github.com/lucasyule2212).<br />
+Copyright © 2021 [Lucas Yule](https://github.com/lucasyule2212).<br />
 This project is licensed by [MIT](./LICENSE).
 
 </div>
