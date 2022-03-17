@@ -7,12 +7,12 @@ import spotifyApi from "../../services/spotifyApi";
 import { toast } from "../../pages/_app";
 // import { Container } from './styles';
 
-const Search: React.FC = () => {
+const Search = () => {
   const [searchText, setSearchText] = useState("");
   const { setArtistData, setIsLoading } = useArtistDataContext();
   const session = useSession();
 
-  function handleSetSearchText(event: React.ChangeEvent<HTMLInputElement>) {
+  function handleSetSearchText(event) {
     event.preventDefault();
     setSearchText(event.target.value);
   }
@@ -59,12 +59,7 @@ const Search: React.FC = () => {
         .then();
 
       const artistAlbums = await albumsData.items.map(
-        (element: {
-          external_urls: { spotify: any };
-          release_date: any;
-          name: any;
-          images: any[];
-        }) => ({
+        (element) => ({
           link: element.external_urls.spotify,
           release_date: element.release_date,
           name: element.name,
