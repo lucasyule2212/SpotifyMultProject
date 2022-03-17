@@ -31,7 +31,7 @@ export default NextAuth({
     }),
     // ...add more providers here
   ],
-  // secret: process.env.JWT_SECRET,
+   secret: 'KwUYNOkKFCywazc+jsD74O7eohQRBJL1rQPh4kwaPLc',
   callbacks: {
     async jwt({ token, account, user }) {
       //first login
